@@ -1,0 +1,71 @@
+body{
+	/*background-color: black;*/
+}
+
+h1{
+	color: white
+}
+
+.card-sec{
+	margin-right: auto;
+	margin-left: auto;
+	width: 20rem
+}
+
+.card{
+	border: 1px solid black;
+	background-color: white;
+	border-radius: 0.5rem;
+}
+
+.content{
+	/*color: white;*/
+	text-align: center;
+}
+
+.img-sec{
+	margin-top: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img{
+	border-radius: 50%;
+	height:10rem;
+	width: 10rem;
+}
+
+.name{
+	margin-bottom: 5px;
+}
+.role{
+	margin-top: 0px;
+}
+
+.skill-sec{
+	margin:1rem 2rem;
+	text-align: left;
+}
+
+.skill-text{
+	margin-bottom: 0px;
+	color:grey;
+	font-weight: 100;
+}
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+	
+	/*justify-content: space-around;*/
+	/*list-style:none;*/
+	align-content: flex-start;
+}
+
+.skill{
+	margin:0.2rem 0.2rem;
+	padding: 0.25rem 0.5rem;
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+}
