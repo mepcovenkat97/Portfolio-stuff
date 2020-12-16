@@ -6,27 +6,41 @@
     <link rel="stylesheet" type="text/css" href="experience.css">
 </head>
 <body>
+	<script>
+		function getData(arg1) {
+			if(arg1 === 'ventuno')
+			{
+				document.getElementById('techzilla').style.display = 'none';
+				document.getElementById(arg1).style.display = 'block';
+			}
+			else
+			{
+				document.getElementById('ventuno').style.display = 'none';
+				document.getElementById(arg1).style.display = 'block';
+			}
+		}
+	</script>
 	<div class="exp-sec">
 		<div class="exp">
 			<div class="experience">
-				<a href="" class="exp-button">
+				<div class="exp-button" onclick="getData('ventuno')">
 					<p class="role">Associate Software Developer</p>
 					<p class="company">Ventuno Technologies (P) Ltd.</p>
-					<p class="date">1yr</p>
-				</a>
+					<p class="date">Dec, 2019 - Dec, 2020</p>
+				</div>
 			</div>
 			<div class="experience">
-				<a href="" class="exp-button">
+				<div class="exp-button" onclick="getData('techzilla')">
 					<p class="role">Full-Stack Developer Trainee</p>
 					<p class="company">Techzilla India (P) Ltd.</p>
-					<p class="date">1yr</p>
-				</a>
+					<p class="date">Jun, 2019 - Nov, 2019</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="experience-contained">
-		<div class="detailed-experience">
+		<div id="ventuno" class="detailed-experience">
 			<p>As a Associate Software Developer, I have</p>
 			<ul>
 				<li>Built application for WebOS and Tizen platforms using React & Redux.</li>
@@ -37,7 +51,7 @@
 			</ul>
 		</div>
 
-		<div class="detailed-experience">
+		<div id="techzilla" class="detailed-experience">
 			<p>As a Full-Stack Developer Trainee, I have</p>
 			<ul>
 				<li>Built application for WebOS and Tizen platforms using React & Redux.</li>

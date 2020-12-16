@@ -24,20 +24,35 @@ body{
 .experience{
 	margin: 5px 10px;
 	padding: 10px 20px;
-	width: 31%;
+	width: 31.7%;
 	border: 1px solid black;
 	border-radius: 15px;
 	background-color: black;
 	color: white;
+	cursor:pointer;
 }
+
+
 .role, .company, .date{
 	margin: 1px 0px;
+	text-align: center;
+}
+
+.role{
+	font-weight: bolder;
+	
 }
 
 .company{
 	font-size: 0.90rem;
 	color: grey;
 	font-weight: 500;
+}
+
+.date{
+	font-weight: 400;
+	font-size: 0.80rem;
+	color: #c6c4c4;
 }
 
 
@@ -52,8 +67,11 @@ body{
 	padding: 10px 20px;
 	width: 70%;
 	border: 1px solid black;
+	border-radius: 15px;
 	background-color: black;
 	color: white;
+
+	display: none; /* Hides the Experience */
 }
 
 
@@ -64,7 +82,20 @@ body{
 	}
 
 	.experience{
-		/*width: 50%;*/
+		width: 36.5%;
+		/*margin: 5px 13px;*/
+		padding: 10px 10px;
+	}
+
+	.company{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		height: 54px;
+	}
+
+	.date{
+		/*text-align: left;*/
+		font-size: 0.70rem;
 	}
 
 	.experience-contained{
