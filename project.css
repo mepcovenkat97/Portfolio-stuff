@@ -36,6 +36,34 @@ body{
     vertical-align: middle;
 }
 
+.project-details{
+    margin: 5px 10px;
+    padding: 10px 20px;
+    padding-bottom: 25px;
+	width: 91.9%;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+    color: white;
+    
+    /* display: none; */
+}
+
+.title{
+    text-align: center;
+}
+
+.project-link{
+    padding: 5px 20px;
+    margin: 0px auto;
+    border:1px solid black;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    font-weight: bolder;
+}
+
 
 @media only screen and (max-width: 425px){
 	.project-section{
@@ -44,5 +72,9 @@ body{
 
     .project{
         width: 31%;
+    }
+
+    .project-details{
+        width: 80%;
     }
 }
