@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
+    margin-left: 0px;
 }
 
 .navbar{
@@ -53,24 +54,32 @@ body{
       overflow: hidden;
       position: fixed;
       bottom: 0;
+      width: 100%;
    }
 
    .menu-mobile{
       margin: 0px auto;
+      display: inline-block;
    }
    
    .navlinks-mobile{
       list-style-type: none;
       margin: 0;
-      padding: 0;
+      /* padding: 0; */
       /* text-align: center; */
       
+   }
+
+   img{
+      /* color: white; */
+      width: 50px;
    }
    
    .link-mobile{
       padding: 10px 10px;
+      margin: 1px auto;
       display: inline;
-      width: 25%;
+      width: 35%;
    }
 
    .link-mobile > a{
