@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    /* overflow: hidden; */
+}
+ 
+ .sidenav {
+   width: 20rem;
+   position: fixed;
+   z-index: 1;
+   top: 20px;
+   left: 10px;
+   background: #000000;
+   overflow-x: hidden;
+   /* padding: 8px 0; */
+ }
+ 
+ .sidenav a {
+   padding: 6px 8px 6px 16px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #2196F3;
+   display: block;
+ }
+ 
+ .sidenav a:hover {
+   color: #064579;
+ }
+ 
+ .main {
+   margin-left: 330px; /* Same width as the sidebar + left position in px */
+   /* font-size: 28px; Increased text to enable scrolling */
+   padding: 0px 10px;
+ }
+
+ h3 {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  color:white;
+  text-transform: uppercase;
+}
+
+span {
+background: transparent;
+margin: 0 20px;
+}
+/* h3:before, */
+h3:after {
+background: grey;
+height: 1px;
+content: '';
+flex: 1;
+}
+
+/* h1.left:after, */
+h1.right:before {
+background: none;
+}
+ 
+ @media screen and (max-height: 450px) {
+   /* .sidenav {padding-top: 15px;} */
+   .sidenav a {font-size: 18px;}
+ }

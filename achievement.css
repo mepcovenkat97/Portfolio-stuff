@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    /* overflow: hidden; */
+}
+
+.achievement-sec{
+   /* margin-right: auto;
+	margin-left: auto;
+    width: 60%; */
+}
+
+.achievement-area{
+   display:flex;
+	flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.achievement{
+   margin: 5px 10px;
+	padding: 10px 20px;
+    /* width: 25%; */
+    width: 26.4%;
+	border: 1px solid grey;
+	border-radius: 15px;
+	background-color: grey;
+	color: black;
+    cursor:default;
+    text-align: center;
+    /* height: 82px; */
+    /* display: inline-block; */
+    vertical-align: middle;
+}
+
+.ach-date{
+   color: white;
+}
+
+.achievement-role{
+   font-weight: bolder;
+}

@@ -5,9 +5,9 @@ body{
 }
 
 .project-section{
-    margin-right: auto;
+    /* margin-right: auto;
 	margin-left: auto;
-    width: 60%;
+    width: 60%; */
     /* background-color: black; */
     /* overflow: hidden; */
 }
@@ -24,11 +24,12 @@ body{
 .project{
     margin: 5px 10px;
 	padding: 10px 20px;
-	width: 25%;
-	border: 1px solid black;
+    /* width: 25%; */
+    width: 26.4%;
+	border: 1px solid grey;
 	border-radius: 15px;
-	background-color: black;
-	color: white;
+	background-color: grey;
+	color: black;
     cursor:pointer;
     text-align: center;
     /* height: 82px; */
@@ -46,7 +47,7 @@ body{
 	background-color: black;
     color: white;
     
-    /* display: none; */
+    display: none;
 }
 
 .title{
@@ -62,6 +63,21 @@ body{
     color: black;
     background: white;
     font-weight: bolder;
+}
+
+.close-button{
+    padding: 5px 20px;
+    margin: 5px 0px;
+    border:1px solid black;
+    color: black;
+    background-color: grey;
+    border-radius: 7px;
+    width: max-content;
+    font-weight: bolder;
+    /* position: absolute;
+    top:434;
+    left: 510; */
+    text-decoration: none;
 }
 
 

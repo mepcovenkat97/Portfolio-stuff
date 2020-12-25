@@ -6,9 +6,9 @@ body{
 
 
 .certificate-section{
-    margin-right: auto;
+    /* margin-right: auto;
 	margin-left: auto;
-    width: 75%;
+    width: 75%; */
 }
 
 .certi-area{
@@ -21,7 +21,8 @@ body{
 .certificate{
     margin: 5px 10px;
 	padding: 15px 20px 20px 20px;
-	width: 25%;
+    /* width: 25%; */
+    width: 26.4%;
 	border: 1px solid black;
 	border-radius: 15px;
 	background-color: black;
@@ -40,6 +41,20 @@ body{
     border-radius: 10px;
     text-decoration: none;
     color: black;
+}
+
+.certificate-name{
+    text-justify: auto;
+}
+
+.issued-by{
+    margin-bottom: 0;
+}
+
+.doi{
+    font-size: 0.95rem;
+    color: grey;
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 425px){

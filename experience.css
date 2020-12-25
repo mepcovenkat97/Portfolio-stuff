@@ -4,16 +4,17 @@ body{
 }
 
 .exp-sec{
-	margin-right: auto;
+	/* margin-right: auto;
 	margin-left: auto;
-	width: 75%;
+	width: 75%; */
 }
 
 .exp{
-	display:flex;
+	/* display:flex;
 	flex-flow: row wrap;
-	/*justify-content: space-between;*/
-	align-content: flex-start;
+	align-content: flex-start; */
+
+	margin-left: 50px;
 }
 
 .exp-button{
@@ -21,10 +22,22 @@ body{
 	color: white;
 }
 
+.exp-button .loc{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.exp-button .position{
+	margin-bottom: 2px;
+}
+
+
+
 .experience{
-	margin: 5px 10px;
-	padding: 10px 20px;
-	width: 31.7%;
+	margin: 5px 10px 5px 10px;
+	padding: 10px 20px 10px 20px;
+	/* width: 31.7%; */
+	/* width: 43%; */
 	border: 1px solid black;
 	border-radius: 15px;
 	background-color: black;
@@ -35,44 +48,62 @@ body{
 
 .role, .company, .date{
 	margin: 1px 0px;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .role{
 	font-weight: bolder;
-	
+	font-size: 1.25rem;
+	/* text-transform: uppercase; */
 }
 
 .company{
-	font-size: 0.90rem;
-	color: grey;
+	/* font-size: 0.90rem; */
+	font-size: 1rem;
+	color: white;
 	font-weight: 500;
 }
 
 .date{
 	font-weight: 400;
-	font-size: 0.80rem;
-	color: #c6c4c4;
+	/* font-size: 0.80rem; */
+	font-size: 1rem;
+	color: grey;
 }
 
 
 .experience-contained{
-	margin-right: auto;
+	/* margin-right: auto;
 	margin-left: auto;
-	width: 75%;
+	width: 75%; */
 }
 
 .detailed-experience{
-	margin: 5px 10px;
-	padding: 10px 20px;
-	width: 70%;
+	margin: 0px 10px 0px 10px;
+	padding: 0px 20px 0px 20px;
+	/* width: 70%; */
 	border: 1px solid black;
 	border-radius: 15px;
 	background-color: black;
 	color: white;
 
-	display: none; /* Hides the Experience */
+	display: none; 
 }
+
+ul{
+	list-style-type: none;
+	margin-top: 0px;
+}
+
+ul > li {
+	text-indent: -5px;
+	
+ }
+ ul > li:before {
+	content: "-";
+	text-indent: -5px;
+	padding-right: 5px;
+ }
 
 
 

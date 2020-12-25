@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    margin-left: 0px;
 }
 
 .navbar{
    background-color: black;
    padding: 15px 0px;  
+}
+
+.side-button{
+   float: left;
+   display: block;
+   /* margin: 1px; */
+}
+
+.side-button > a{
+   text-decoration: none;
+   color:white;
 }
 
 .navbar-mobile{
@@ -45,7 +55,12 @@ body{
 
 @media only screen and (max-width: 425px){
    .navbar{
-      display: none;
+      /* display: none; */
+      width: 100%;
+   }
+
+   .navlinks{
+      /* display: none; */
    }
    .navbar-mobile{
       background-color: black;
