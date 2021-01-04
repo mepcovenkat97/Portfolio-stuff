@@ -39,3 +39,16 @@ body{
 .achievement-role{
    font-weight: bolder;
 }
+
+.achievement span{
+    margin: 0px;
+}
+
+@media only screen and (max-width: 425px){
+
+    .achievement{
+        width: 32%;
+        /* margin: 0px;
+        padding: 0px; */
+    }
+}

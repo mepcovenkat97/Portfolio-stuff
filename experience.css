@@ -112,8 +112,12 @@ ul > li {
 		width: 100%;
 	}
 
+	.exp{
+		margin-left: 0px;
+	}
+
 	.experience{
-		width: 36.5%;
+		/* width: 36.5%; */
 		/*margin: 5px 13px;*/
 		padding: 10px 10px;
 	}

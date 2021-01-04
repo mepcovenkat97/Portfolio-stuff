@@ -58,8 +58,50 @@ flex: 1;
 h1.right:before {
 background: none;
 }
+
+.link-sec{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.links{
+  padding: 0px 10px;
+  color: white;
+}
+
+.links img{
+  border-radius: 0px;
+  height: 2rem;
+  width: 2rem;
+  /* padding: 0px 10px; */
+}
+
+
+.down-resume{
+  width: 60%;
+  margin: 0px auto;
+  padding: 5px;
+  background: grey;
+  color: black;
+  border-radius: 15px;
+}
  
- @media screen and (max-height: 450px) {
+ @media screen and (max-width: 450px) {
    /* .sidenav {padding-top: 15px;} */
    .sidenav a {font-size: 18px;}
+
+   .sidenav {
+    width: 100%;
+    position: static;
+  }
+
+  .main{
+    margin-left: 0px;
+  }
+
+  span {
+    background: transparent;
+    margin: 0 20px 0 0;
+    }
  }

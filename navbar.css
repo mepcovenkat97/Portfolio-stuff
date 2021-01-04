@@ -85,7 +85,7 @@ body{
       
    }
 
-   img{
+   .navbar img{
       /* color: white; */
       width: 50px;
    }
@@ -108,4 +108,5 @@ body{
       color: grey;
       border-bottom: 1px solid grey;
    }
+
 }
