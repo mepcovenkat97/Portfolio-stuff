@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
 	font-family: 'Montserrat', sans-serif;
-}
+} */
 
 h1{
 	color: white
@@ -31,8 +31,8 @@ h1{
 }
 
 img{
-	border-radius: 50%;
-	height:10rem;
+	border-radius: 15px;
+	height:13rem;
 	width: 10rem;
 }
 

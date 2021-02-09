@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    /* overflow: hidden; */
-}
+} */
 
 .achievement-sec{
    /* margin-right: auto;
@@ -33,7 +32,7 @@ body{
 }
 
 .ach-date{
-   color: white;
+   color: black
 }
 
 .achievement-role{

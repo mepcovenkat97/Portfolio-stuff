@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
-    /* overflow: hidden; */
-}
+} */
 
 .project-section{
     /* margin-right: auto;
@@ -15,7 +14,7 @@ body{
 .projects-area{
     display:flex;
 	flex-flow: row wrap;
-	/*justify-content: space-between;*/
+	justify-content: center;
     align-content: flex-start;
     /* overflow: auto; */
     /* white-space: nowrap; */
@@ -87,7 +86,7 @@ body{
     }
 
     .project{
-        width: 32%;
+        width: 28%;
         vertical-align: middle;
     }
 

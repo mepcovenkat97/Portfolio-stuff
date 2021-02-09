@@ -1,7 +1,9 @@
+<!DOCTYPE html >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="D.R.Venkateshwar is an aspiring Full-Stack Web Developer having a professional experience of 1.5 years in developing web application and optimizing it for better performance.">
     <title>D.R.Venkateshwar</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -10,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="project.css">
     <link rel="stylesheet" type="text/css" href="certification.css">
     <link rel="stylesheet" type="text/css" href="achievement.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     
 </head>
 <body>
@@ -20,7 +22,7 @@
             <div class="card">
                <div class="content">
                   <div class="img-sec">
-                     <img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" alt="DRV"/>
+                     <img src="/assets/photo.jpg" alt="DRV" width="10" height="10"/>
                   </div>
                   <h4 class="name">D.R.Venkateshwar</h4>
                   <p class="work-role">Full Stack Developer</p>
@@ -44,67 +46,28 @@
                   </div>
       
                   <p class="email">mepcovenkat97@gmail.com</p>
-                  <div class="down-resume">
+                  <a class="down-resume" href="assets/Venkateshwar_Resume.pdf" target="_blank" rel="noopener">
                      Download Resume
-                  </div>
+                  </a>
                </div>
             </div>
         </div>
-        <!-- <div class="card">
-           <div class="content">
-              
-           </div>
-        </div> -->
       </div>
       
       <div class="main">
 
-         <!-- Navbar Start -->
-         <!-- <div class="navbar">
-            <div class="menu">
-               <ul class="navlinks">
-                  <li class="link"><a href="#">Experience</a></li>
-                  <li class="link"><a href="#">Projects</a></li>
-                  <li class="link"><a href="#">Certifications</a></li>
-                  <li class="link"><a href="#">Achievements</a></li>
-               </ul>
-            </div>
-         </div> -->
-         <!-- Navbar Ends -->
-
-         <!-- Experience Start -->
+         
 
          <script>
             let show = true;
             function getData(arg1) {
                if(arg1 === 'ventuno')
                {
-                  // if(show === true){
-                  //    document.getElementById('techzilla').style.display = 'none';
-                  //    document.getElementById(arg1).style.display = 'block';
-                  //    show = false;
-                  // }
-                  // else{
-                  //    document.getElementById('techzilla').style.display = 'none';
-                  //    document.getElementById(arg1).style.display = 'none';
-                  //    show = true
-                  // }
                   document.getElementById('techzilla').style.display = 'none';
-                  document.getElementById(arg1).style.display = 'block';
-                  
+                  document.getElementById(arg1).style.display = 'block';  
                }
                else
                {
-                  // if(show === true){
-                  //    document.getElementById('ventuno').style.display = 'none';
-                  //    document.getElementById(arg1).style.display = 'block';
-                  //    show = false;
-                  // }
-                  // else{
-                  //    document.getElementById('ventuno').style.display = 'none';
-                  //    document.getElementById(arg1).style.display = 'none';
-                  //    show=true
-                  // }
                   document.getElementById('ventuno').style.display = 'none';
                   document.getElementById(arg1).style.display = 'block';
                   
@@ -178,29 +141,6 @@
             </div>
          </div>
       
-         <!-- <div class="experience-contained">
-            <div id="ventuno" class="detailed-experience">
-               <p>As a Associate Software Developer, I have</p>
-               <ul>
-                  <li>Built application for WebOS and Tizen platforms using React & Redux.</li>
-                  <li>Implemented a new template for the OTT Web endpoint.</li>
-                  <li>Rewamped the entire static site with security measures</li>
-                  <li>Implemented multiple REST APIs related to OTT Platforms in Django Framework</li>
-                  <li>Helped in build a automation process for the App Building</li>
-               </ul>
-            </div> -->
-      
-            <!-- <div id="techzilla" class="detailed-experience">
-               <p>As a Full-Stack Developer Trainee, I have</p>
-               <ul>
-                  <li>Learnt Basics and Advanced JavaScript concepts including ES6 Syntax.</li>
-                  <li>Learnt MERN Stack followed by its implementation.</li>
-                  <li>Working with REST APIs and testing them with Postman.</li>
-                  <li>Build the CRM Panel and the Web view of the Video On-Demand application.</li>
-                  <li>Improved understanding of data structures and various algorithms.</li>
-               </ul>
-            </div>
-         </div> -->
 
          <!-- Experience Ends -->
 
@@ -222,8 +162,8 @@
                   <h4 class="title">Money Tracker</h4>
                   <p>This application tracks the expenses made by us. Initial budget should be updated and the expenses made are tracked using that. The expenses can be classified into categories. We can also add categories. Category-wise Expenses made are represented in pie-charts. Also we can update the expense or delete it. Pagination also implemented while displaying the expenses. Authentication has been implemented using Web Tokens. </p>
                   <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, MongoDB, Redux</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/Expense-Tracker" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('money-tracker')">Close</a>
+                  <a class="project-link" href="https://github.com/mepcovenkat97/Expense-Tracker" target="_blank" rel="noopener">View Link</a>
+                  <a class="close-button" href="#" onclick="closeData('money-tracker')" rel="noopener">Close</a>
                </div>
             </div>
 
@@ -232,8 +172,8 @@
                   <h4 class="title">Simply Speak</h4>
                   <p>This application is a Real Time chat Application which uses web sockets to communicate between end points. The chat is either group chat or one-to-one chat based on the user needs. Users also able to see the list of users online in the group chat. Emojis also added to the chat. </p>
                   <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, Socket.io,MongoDB</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/Chat" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('simply-speak')">Close</a>
+                  <a class="project-link" href="https://github.com/mepcovenkat97/Chat" target="_blank" rel="noopener">View Link</a>
+                  <a class="close-button" href="#" onclick="closeData('simply-speak')" rel="noopener">Close</a>
                </div>
            </div>
 
@@ -242,8 +182,8 @@
                   <h4 class="title">Taskman</h4>
                   <p>This application is a task management Application with two different dashboards[Admin & User]. Various Tasks can be created by the admin and assigned to the user with task priority and end date. A small message feature has been implemented for each task inorder have a conversation regarding the task. If due date is over then the user is intimidated with the end of due date. API calls are authenticated with JWT Tokens and are handled using PassportJS.</p>
                   <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, Redux,MongoDB</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/taskman_frontend" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('taskman')">Close</a>
+                  <a class="project-link" href="https://github.com/mepcovenkat97/taskman_frontend" target="_blank" rel="noopener">View Link</a>
+                  <a class="close-button" href="#" onclick="closeData('taskman')" rel="noopener">Close</a>
                </div>
             </div>
 
@@ -252,8 +192,8 @@
                   <h4 class="title">Tuberculosis Detection</h4>
                   <p>This application is a web-based Application in order to detect Tuberculosis in Human Lungs using X-Ray images.The User has to upload the X-ray images of Lungs. The System will predict the percentage of Affection using pre-trained CNN Model loaded into the system.We are able to achieve a accuracy of 96% for detecting Tuberculosis from X-Ray images.The user also able to download their report in a pdf.</p>
                   <h4>Tech Stack - Python3, OpenCV, Keras, Django</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/Tb-Detection" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('tb-detection')">Close</a>
+                  <a class="project-link" rel="noopener" href="https://github.com/mepcovenkat97/Tb-Detection" target="_blank">View Link</a>
+                  <a class="close-button" rel="noopener" href="#" onclick="closeData('tb-detection')">Close</a>
                </div>
             </div>
 
@@ -262,8 +202,8 @@
                   <h4 class="title">GUI for Tuning CNN Parameters.</h4>
                   <p>This application is a web-based Application for tuning CNN Parameters. First, user need to login. After he/she can upload dataset and choose hyperparameters like no of Convolutional Layers, Activation Function, No.of hidden layers, No.of Output Layers etc. Once choosen training will be carried out in the server side. Once training completed the user is notified with the Accuracy percentage and the Loss percentage. Also the user can able to download the corresponding weight file and the model file in the form of HDF5 format.</p>
                   <h4>Tech Stack - Python3, OpenCV, Keras, Django</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/Web-based-GUI-for-Tuning-CNN-Parameters" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('gui-tuning')">Close</a>
+                  <a class="project-link" rel="noopener" href="https://github.com/mepcovenkat97/Web-based-GUI-for-Tuning-CNN-Parameters" target="_blank">View Link</a>
+                  <a class="close-button" rel="noopener" href="#" onclick="closeData('gui-tuning')">Close</a>
                </div>
             </div>
 
@@ -272,8 +212,8 @@
                   <h4 class="title">Anonymous Tasks.</h4>
                   <p>This a fun application to give some random tasks to people. The application will pick a task randomly which is available in database and give it to user to complete it within some particular time. Login is performed using PassportJS and the API calls are authenticated with JWT token. Also there is a option to upload your own task to the database.</p>
                   <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, PassportJS, MongoDB</h4>
-                  <a class="project-link" href="https://github.com/mepcovenkat97/Cpl_Game" target="_blank">View Link</a>
-                  <a class="close-button" href="#" onclick="closeData('anonymous-task')">Close</a>
+                  <a class="project-link" rel="noopener"` href="https://github.com/mepcovenkat97/Cpl_Game" target="_blank">View Link</a>
+                  <a class="close-button" rel="noopener"` href="#" onclick="closeData('anonymous-task')">Close</a>
                </div>
             </div>
 
