@@ -64,13 +64,19 @@
                if(arg1 === 'ventuno')
                {
                   document.getElementById('techzilla').style.display = 'none';
+                  document.getElementById('crayond').style.display = 'none';
                   document.getElementById(arg1).style.display = 'block';  
                }
-               else
+               else if (arg1 == 'crayond')
                {
+                  document.getElementById('techzilla').style.display = 'none';
                   document.getElementById('ventuno').style.display = 'none';
                   document.getElementById(arg1).style.display = 'block';
-                  
+               }
+               else{
+                  document.getElementById('crayond').style.display = 'none';
+                  document.getElementById('ventuno').style.display = 'none';
+                  document.getElementById(arg1).style.display = 'block';
                }
             }
 
@@ -98,6 +104,26 @@
          <h3 class="right"><span>Experience</span></h3>
          <div class="exp-sec">
             <div class="exp">
+
+               <div class="experience">
+                  <div class="exp-button" onclick="getData('crayond')">
+                     <p class="position"><span class="role">Full Stack Developer</span></p>
+                     <p class="loc"> <span class="company">Crayond Digital Pvt. Ltd.</span> <span class="date">[Feb, 2021 - Present]</span> </p>
+                     <!-- <p class="date">Dec, 2019 - Dec, 2020</p> -->
+                  </div>
+               </div>
+
+               <div class="experience-contained">
+                  <div id="crayond" class="detailed-experience">
+                     <!-- <p>As a Associate Software Developer, I have</p> -->
+                     <ul>
+                        <li>Integrate APIs with the Front End through Redux.</li>
+                        <li>Involved in a Dynamic form Configurator Projects to generate Dynamic Form for the Enquiry Related Stuffs.</li>
+                     </ul>
+                  </div>
+               </div>
+
+
                <div class="experience">
                   <div class="exp-button" onclick="getData('ventuno')">
                      <p class="position"><span class="role">Associate Software Developer</span></p>
