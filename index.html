@@ -1,39 +1,555 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-	<div class="card-sec">
-    	<div class="card">
-    		<div class="content">
-    			<div class="img-sec">
-    				<img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" alt="DRV"/>
-    			</div>
-    			<h4 class="name">D.R.Venkateshwar</h4>
-    			<p class="role">Full Stack Developer</p>
-    			<div class="skill-sec">
-    				
-    				<p class="skill-text">SKILLS</p>
-    				<div class="container">
-					  <div class="skill">HTML</div>
-					  <div class="skill">CSS</div>
-					  <div class="skill">JavaScript</div>
-					  <div class="skill">React</div>
-					  <div class="skill">Node</div>
-					  <div class="skill">Mongo</div>
-					  <div class="skill">Java</div>
-					  <div class="skill">Django</div>
-					  <!-- <div class="skill">Python</div> -->
-					  <!-- <div class="skill">Git</div> -->
-					  <div class="skill">REST APIs</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="D.R.Venkateshwar is an aspiring Full-Stack Web Developer having a professional experience of 1.5 years in developing web application and optimizing it for better performance."
+    />
+    <title>D.R.Venkateshwar</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="experience.css" />
+    <link rel="stylesheet" type="text/css" href="project.css" />
+    <link rel="stylesheet" type="text/css" href="certification.css" />
+    <link rel="stylesheet" type="text/css" href="achievement.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="switch.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  </head>
+  <body>
+    <div class="sidenav">
+      <div class="card-sec">
+        <div class="card">
+          <div class="content">
+            <div class="img-sec">
+              <img src="assets/photo.jpg" alt="DRV" width="10" height="10" />
+            </div>
+            <h4 class="name">D.R.Venkateshwar</h4>
+            <p class="work-role">Full Stack Developer</p>
+            <div class="skill-sec">
+              <p class="skill-text">SKILLS</p>
+              <div class="container">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node</div>
+                <div class="skill">Mongo</div>
+                <div class="skill">Java</div>
+                <div class="skill">Django</div>
+                <!-- <div class="skill">Python</div> -->
+                <!-- <div class="skill">Git</div> -->
+                <div class="skill">REST APIs</div>
+              </div>
+            </div>
 
-					</div>
-    			</div>
-    		</div>
-    	</div>
-	</div>
-</body>
+            <!-- <p class="email">mepcovenkat97@gmail.com</p> -->
+
+            <!-- <a class="down-resume" href="assets/Venkateshwar_Resume.pdf" target="_blank" rel="noopener">
+               Download Resume
+            </a> -->
+
+            <!-- <h3 class="right"><span>Links</span></h3> -->
+            <div class="link-sec">
+              <div class="links"> <a href="mailto:mepcovenkat97@gmail.com"> <img src="assets/gmail.svg" alt="gmail"/> </a></div>
+              <div class="links"> <a href="https://wa.me/919585217654" target="_blank" rel="noopener noreferrer"> <img src="assets/whatsapp.svg" alt="whatsapp"/> </a></div>
+              <div class="links"> <a href="https://www.linkedin.com/in/venkateshwar-d-r-500b98114/" target="_blank" rel="noopener noreferrer"> <img src="assets/linkedin.svg" alt="linkedin"/> </a></div>
+              <div class="links"> <a href="https://github.com/mepcovenkat97" rel="noopener noreferrer" target="_blank"> <img src="assets/github.svg" alt="github"/> </a></div>
+            </div>
+
+            <div>
+              <!-- <span style="font-family: 'Courier New', Courier, monospace; width: 25%;">Made with <i class="fa fa-heart pulse"></i> </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <script>
+        let show = true;
+        function getData(arg1) {
+          if (arg1 === "ventuno") {
+            // document.getElementById('techzilla').style.display = 'none';
+            // document.getElementById('crayond').style.display = 'none';
+            document.getElementById(arg1).style.display = "block";
+          } else if (arg1 == "crayond") {
+            // document.getElementById('techzilla').style.display = 'none';
+            // document.getElementById('ventuno').style.display = 'none';
+            document.getElementById(arg1).style.display = "block";
+          } else if (arg1 == "techzilla") {
+            // document.getElementById('crayond').style.display = 'none';
+            // document.getElementById('ventuno').style.display = 'none';
+            document.getElementById(arg1).style.display = "block";
+          } else {
+            document.getElementById("crayond").style.display = "none";
+            document.getElementById("ventuno").style.display = "none";
+            document.getElementById("techzilla").style.display = "none";
+          }
+        }
+
+        function getProjects(arg1) {
+          document.getElementsByClassName("project-details")[0].style.display =
+            "none";
+          document.getElementsByClassName("project-details")[1].style.display =
+            "none";
+          document.getElementsByClassName("project-details")[2].style.display =
+            "none";
+          document.getElementsByClassName("project-details")[3].style.display =
+            "none";
+          document.getElementsByClassName("project-details")[4].style.display =
+            "none";
+          document.getElementsByClassName("project-details")[5].style.display =
+            "none";
+          document.getElementById(arg1).style.display = "block";
+        }
+
+        function closeData(arg1) {
+          document.getElementById(arg1).style.display = "none";
+        }
+
+        function redirectRoute(url) {
+          window.open(url, "_blank");
+        }
+      </script>
+
+      <h3 class="right"><span>Experience</span></h3>
+      <div class="exp-sec">
+        <div class="exp">
+          <div class="experience">
+            <div class="exp-button" onclick="getData('crayond')">
+              <p class="position">
+                <span class="role">Full Stack Developer</span>
+              </p>
+              <p class="loc">
+                <span class="company">Crayond Digital Pvt. Ltd.</span>
+                <br class="line-break"/>
+                <span class="date">Feb, 2021 - Present</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-contained">
+            <div id="crayond" class="detailed-experience">
+              <ul>
+                <li>Integrate APIs with the Front End through Redux.</li>
+                <li>
+                  Involved in a Dynamic form Configurator Projects to generate
+                  Dynamic Form for the Enquiry Related Stuffs.
+                </li>
+                <li>
+                  Helped in developing a medical-related web portal (CRM Styled)
+                  where the patient can use the medical services offered by
+                  hospitals
+                </li>
+                <li>
+                  Developed a common middleware using redux-toolkit which is
+                  commonly used in both web and mobile apps
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="experience">
+            <div class="exp-button" onclick="getData('ventuno')">
+              <p class="position">
+                <span class="role">Associate Software Developer</span>
+              </p>
+              <p class="loc">
+                <span class="company">Ventuno Technologies (P) Ltd.</span>
+                <br class="line-break"/>
+                <span class="date">Dec, 2019 - Dec, 2020</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-contained">
+            <div id="ventuno" class="detailed-experience">
+              <ul>
+                <li>
+                  Built application for WebOS and Tizen platforms using React &
+                  Redux.
+                </li>
+                <li>Implemented a new template for the OTT Web endpoint.</li>
+                <li>Rewamped the entire static site with security measures</li>
+                <li>
+                  Implemented multiple REST APIs related to OTT Platforms in
+                  Django Framework
+                </li>
+                <li>
+                  Helped in build a automation process for the App Building
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="exp-button" onclick="getData('techzilla')">
+              <p class="position">
+                <span class="role">Full-Stack Developer Trainee</span>
+              </p>
+              <p class="loc">
+                <span class="company">Techzilla India (P) Ltd.</span>
+                <br class="line-break"/>
+                <span class="date">Jun, 2019 - Nov, 2019</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-contained">
+            <div id="techzilla" class="detailed-experience">
+              <ul>
+                <li>
+                  Learnt Basics and Advanced JavaScript concepts including ES6
+                  Syntax.
+                </li>
+                <li>Learnt MERN Stack followed by its implementation.</li>
+                <li>Working with REST APIs and testing them with Postman.</li>
+                <li>
+                  Build the CRM Panel and the Web view of the Video On-Demand
+                  application.
+                </li>
+                <li>
+                  Improved understanding of data structures and various
+                  algorithms.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Ends -->
+
+      <!-- Projects Start -->
+      <h3 class="right"><span>Projects</span></h3>
+      <div class="project-section">
+        <div class="projects-area">
+          <div class="project" onclick="getProjects('money-tracker')">
+            Money Tracker
+          </div>
+          <div class="project" onclick="getProjects('simply-speak')">
+            Simply Speak
+          </div>
+          <div class="project" onclick="getProjects('taskman')">Taskman</div>
+          <div class="project" onclick="getProjects('tb-detection')">
+            TB Detection
+          </div>
+          <div class="project" onclick="getProjects('gui-tuning')">
+            GUI for tuning CNN Params
+          </div>
+          <div class="project" onclick="getProjects('anonymous-task')">
+            Anonymous Tasks
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="money-tracker">
+            <h4 class="title">Money Tracker</h4>
+            <p>
+              This application tracks the expenses made by us. Initial budget
+              should be updated and the expenses made are tracked using that.
+              The expenses can be classified into categories. We can also add
+              categories. Category-wise Expenses made are represented in
+              pie-charts. Also we can update the expense or delete it.
+              Pagination also implemented while displaying the expenses.
+              Authentication has been implemented using Web Tokens.
+            </p>
+            <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, MongoDB, Redux</h4>
+            <a
+              class="project-link"
+              href="https://github.com/mepcovenkat97/Expense-Tracker"
+              target="_blank"
+              rel="noopener"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              href="#"
+              onclick="closeData('money-tracker')"
+              rel="noopener"
+              >Close</a
+            >
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="simply-speak">
+            <h4 class="title">Simply Speak</h4>
+            <p>
+              This application is a Real Time chat Application which uses web
+              sockets to communicate between end points. The chat is either
+              group chat or one-to-one chat based on the user needs. Users also
+              able to see the list of users online in the group chat. Emojis
+              also added to the chat.
+            </p>
+            <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, Socket.io,MongoDB</h4>
+            <a
+              class="project-link"
+              href="https://github.com/mepcovenkat97/Chat"
+              target="_blank"
+              rel="noopener"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              href="#"
+              onclick="closeData('simply-speak')"
+              rel="noopener"
+              >Close</a
+            >
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="taskman">
+            <h4 class="title">Taskman</h4>
+            <p>
+              This application is a task management Application with two
+              different dashboards[Admin & User]. Various Tasks can be created
+              by the admin and assigned to the user with task priority and end
+              date. A small message feature has been implemented for each task
+              inorder have a conversation regarding the task. If due date is
+              over then the user is intimidated with the end of due date. API
+              calls are authenticated with JWT Tokens and are handled using
+              PassportJS.
+            </p>
+            <h4>Tech Stack - ReactJS, NodeJS, ExpressJS, Redux,MongoDB</h4>
+            <a
+              class="project-link"
+              href="https://github.com/mepcovenkat97/taskman_frontend"
+              target="_blank"
+              rel="noopener"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              href="#"
+              onclick="closeData('taskman')"
+              rel="noopener"
+              >Close</a
+            >
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="tb-detection">
+            <h4 class="title">Tuberculosis Detection</h4>
+            <p>
+              This application is a web-based Application in order to detect
+              Tuberculosis in Human Lungs using X-Ray images.The User has to
+              upload the X-ray images of Lungs. The System will predict the
+              percentage of Affection using pre-trained CNN Model loaded into
+              the system.We are able to achieve a accuracy of 96% for detecting
+              Tuberculosis from X-Ray images.The user also able to download
+              their report in a pdf.
+            </p>
+            <h4>Tech Stack - Python3, OpenCV, Keras, Django</h4>
+            <a
+              class="project-link"
+              rel="noopener"
+              href="https://github.com/mepcovenkat97/Tb-Detection"
+              target="_blank"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              rel="noopener"
+              href="#"
+              onclick="closeData('tb-detection')"
+              >Close</a
+            >
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="gui-tuning">
+            <h4 class="title">GUI for Tuning CNN Parameters.</h4>
+            <p>
+              This application is a web-based Application for tuning CNN
+              Parameters. First, user need to login. After he/she can upload
+              dataset and choose hyperparameters like no of Convolutional
+              Layers, Activation Function, No.of hidden layers, No.of Output
+              Layers etc. Once choosen training will be carried out in the
+              server side. Once training completed the user is notified with the
+              Accuracy percentage and the Loss percentage. Also the user can
+              able to download the corresponding weight file and the model file
+              in the form of HDF5 format.
+            </p>
+            <h4>Tech Stack - Python3, OpenCV, Keras, Django</h4>
+            <a
+              class="project-link"
+              rel="noopener"
+              href="https://github.com/mepcovenkat97/Web-based-GUI-for-Tuning-CNN-Parameters"
+              target="_blank"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              rel="noopener"
+              href="#"
+              onclick="closeData('gui-tuning')"
+              >Close</a
+            >
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="project-details" id="anonymous-task">
+            <h4 class="title">Anonymous Tasks.</h4>
+            <p>
+              This a fun application to give some random tasks to people. The
+              application will pick a task randomly which is available in
+              database and give it to user to complete it within some particular
+              time. Login is performed using PassportJS and the API calls are
+              authenticated with JWT token. Also there is a option to upload
+              your own task to the database.
+            </p>
+            <h4>
+              Tech Stack - ReactJS, NodeJS, ExpressJS, PassportJS, MongoDB
+            </h4>
+            <a
+              class="project-link"
+              rel="noopener"
+              `
+              href="https://github.com/mepcovenkat97/Cpl_Game"
+              target="_blank"
+              >View Link</a
+            >
+            <a
+              class="close-button"
+              rel="noopener"
+              `
+              href="#"
+              onclick="closeData('anonymous-task')"
+              >Close</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Projects Ends -->
+
+      <!-- Certification Start -->
+
+      <h3 class="right"><span>Certification</span></h3>
+      <div class="certificate-section">
+        <div class="certi-area">
+          <div
+            class="certificate"
+            onclick="redirectRoute('https:\/\/www.hackerrank.com/certificates/62a1741c657e')"
+          >
+            <p class="certificate-name"><b>JavaScript - Basic</b></p>
+            <p class="issued-by">Hackerrank</p>
+            <p class="doi">Dec 2020</p>
+          </div>
+          <div
+            class="certificate"
+            onclick="redirectRoute('https:\/\/www.hackerrank.com/certificates/3a46d183ef55')"
+          >
+            <p class="certificate-name"><b>Problem Solving - Basic</b></p>
+            <p class="issued-by">Hackerrank</p>
+            <p class="doi">Sep 2020</p>
+          </div>
+          <div
+            class="certificate"
+            onclick="redirectRoute('https:\/\/www.hackerrank.com/certificates/5ce254c0622d')"
+          >
+            <p class="certificate-name"><b>Java - Basic & Intermediate</b></p>
+            <p class="issued-by">Hackerrank</p>
+            <p class="doi">Sep 2020</p>
+          </div>
+          <div
+            class="certificate"
+            onclick="redirectRoute('http:\/\/techzillaindia.com/upskill/certificate/#/10161')"
+          >
+            <p class="certificate-name">
+              <b>Full Stack Development Certificate</b>
+            </p>
+            <p class="issued-by">Techzilla India (P) Ltd.</p>
+            <p class="doi">Nov 2019</p>
+          </div>
+          <div
+            class="certificate"
+            onclick="redirectRoute('https:\/\/www.freecodecamp.org/certification/fcc1757ed7c-d90f-4efb-82ed-17f4bf03b337/javascript-algorithms-and-data-structures')"
+          >
+            <p class="certificate-name">
+              <b>Javascript Data Structures & Algorithms</b>
+            </p>
+            <p class="issued-by">freeCodeCamp.org</p>
+            <p class="doi">Aug 2019</p>
+          </div>
+          <div class="certificate" onclick="redirectRoute('#')">
+            <p class="certificate-name">
+              <b>Design and Analysis of Algorithm</b>
+            </p>
+            <p class="issued-by">NPTEL</p>
+            <p class="doi">Jan 2017</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certification Ends -->
+
+      <!-- Achievement Start -->
+      <h3 class="right"><span>Roles & Achievements</span></h3>
+      <div class="achievement-sec">
+        <div class="achievement-area">
+          <div class="achievement">
+            Google Students Club <br /><span class="achievement-role"
+              >Event Organiser</span
+            ><br /><span class="ach-date">Jun 2018 - Mar 2019</span>
+          </div>
+          <div class="achievement">
+            DHFL Fintech Challenge <br />
+            <span class="achievement-role">National Winner</span> <br />
+            <span class="ach-date">Mar 2019</span>
+          </div>
+          <div class="achievement">
+            Infosys Foundation Program <br />
+            <span class="achievement-role">Batch Topper</span> <br />
+            <span class="ach-date">Jul 2018</span>
+          </div>
+        </div>
+      </div>
+      <!-- Achievement Ends -->
+
+      <!-- Links Start -->
+
+      <!-- 
+         <ul class="tabs" role="tablist">
+            <li>
+                <input type="radio" name="tabs" id="tab1" checked />
+                <label for="tab1" 
+                       role="tab" 
+                       aria-selected="true" 
+                       aria-controls="panel1" 
+                       tabindex="0">Description</label>
+                <div id="tab-content1" 
+                     class="tab-content" 
+                     role="tabpanel" 
+                     aria-labelledby="description" 
+                     aria-hidden="false">
+                  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                </div>
+            </li>
+          
+            <li>
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2"
+                       role="tab" 
+                       aria-selected="false" 
+                       aria-controls="panel2" 
+                       tabindex="0">Specification</label>
+                <div id="tab-content2" 
+                     class="tab-content"
+                     role="tabpanel" 
+                     aria-labelledby="specification" 
+                     aria-hidden="true">
+                  <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla?</p>
+                </div>
+            </li>
+        </ul> -->
+    </div>
+  </body>
 </html>
